@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url(null.css);
+
+body {
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 1000px;
+    background: url(src/first.png);
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    font-family: "Inconsolata", monospace;
+    color: white;
+    position: sticky;
+    top: 37px;
+    z-index: 10;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 11em;
+    align-items: center;
+
+    height: 0px;
+}
+
+.header-list li {
+    display: inline-block;
+    margin: 0 5em;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.header-login {
+    display: flex;
+    margin: 35px 0.5em;
+    align-items: center;
+}
+
+.header-login h1 {
+    cursor: pointer;
+    margin-right: 2em;
+    font-size: 1.2em;
+}
+
+.header-login h2 {
+    cursor: pointer;
+    font-size: 1.2em;
+    border: 2px white solid;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.6s;
+}
+
+.header-login h2:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+
+.header_block {
+    position: absolute;
+    right: 20em;
+    top: 20em;
+    color: white;
+}
+
+.header_block-title {
+    font-family: "Inknut Antiqua", serif;
+    font-size: 5em;
+    margin-bottom: 30px;
+    cursor: default;
+}
+
+.header_block-description {
+    font-family: "Inconsolata", monospace;
+    font-size: 1.3em;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.header_block-button button {
+    padding: 0;
+    border: 2px white solid;
+    border-radius: 5px;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 1.5em;
+    padding: 10px 40px;
+    margin-left: 10px;
+
+}
+
+
+main {
+    width: 100%;
+    height: 990px;
+    background: url(src/second.png);
+    background-position: center;
+
+}
+
+.main_container {
+    position: absolute;
+    z-index: 11;
+    margin-top: 14em;
+    left: 16.5em;
+    background-color: white;
+    width: 27em;
+    height: 37em;
+    -webkit-box-shadow: 0px 127px 58px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 127px 58px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 127px 58px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.main-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 9px 19px;
+    font-family: "Inconsolata", monospace;
+}
+
+.main-top h1 {
+    font-size: 3em;
+    font-family: "Inconsolata", monospace;
+    cursor: default;
+    color: rgb(8, 83, 145);
+}
+
+.main-top h1::after {
+    content: "";
+    width: 250px;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(8, 83, 145);
+    left: 0;
+    top: 70px;
+
+}
+
+.main_exitbutton {
+    font-size: 2em;
+    font-family: "Inconsolata", monospace;
+    cursor: pointer;
+    color: rgb(8, 83, 145);
+}
+
+.main-center {
+    font-family: "Inknut Antiqua", serif;
+    margin: 9px 19px;
+
+}
+
+.main-center_title {
+    margin-top: 173px;
+    margin-bottom: 21px;
+    cursor: default;
+}
+
+.main-center_text {
+    margin-bottom: 12px;
+    line-height: 23px;
+    cursor: default;
+}
+
+.main-center_button button {
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+    font-family: "Inconsolata", monospace;
+    font-size: 1.8em;
+}
+
+.main_map {
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    z-index: 1;
+}
+
+.map_object1 {
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    position: absolute;
+    right: 50em;
+    bottom: 10em;
+    clip-path: polygon(50% 0%, 84% 9%, 100% 47%, 81% 77%, 49% 100%, 16% 73%, 0 35%, 17% 12%);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.map_object1:hover {
+    transform: scale(1.2);
+
+}
+
+.map_object1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.map_object2 {
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    position: absolute;
+    right: 40em;
+    bottom: 35em;
+    clip-path: polygon(50% 0%, 84% 14%, 100% 47%, 81% 77%, 49% 100%, 16% 73%, 0 35%, 17% 12%);
+    cursor: pointer;
+    transition: transform 0.5s;
+
+}
+
+.map_object2 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+
+.map_object2:hover {
+    transform: scale(1.2);
+}
+
+.map_object3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(172, 172, 172);
+    position: absolute;
+    right: 55em;
+    bottom: 50em;
+    clip-path: polygon(50% 0%, 84% 12%, 100% 47%, 81% 77%, 49% 100%, 16% 73%, 0 35%, 17% 12%);
+    cursor: pointer;
+    transition: transform 0.5s;
+
+}
+
+.map_object3 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.map_object3:hover {
+    transform: scale(1.2);
+
+}
+
+.wave1 {
+    transform: rotate(20deg);
+    right: 50em;
+    bottom: 20em;
+    width: 25px;
+    height: 50px;
+    position: absolute;
+    border-radius: 13% 87% 18% 82% / 100% 0% 100% 0%;
+    background: white;
+}
+
+.wave2 {
+    transform: rotate(30deg);
+    right: 47em;
+    bottom: 28em;
+    width: 25px;
+    height: 50px;
+    position: absolute;
+    border-radius: 13% 87% 18% 82% / 100% 0% 100% 0%;
+    background: white;
+}
+
+.wave3 {
+    transform: rotate(-35deg);
+    right: 48em;
+    bottom: 42em;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    border-radius: 13% 87% 18% 82% / 100% 0% 100% 0%;
+    background: rgb(172, 172, 172);
+}
+
+.wave4 {
+    transform: rotate(-40deg);
+    right: 53em;
+    bottom: 47em;
+    width: 15px;
+    height: 30px;
+    position: absolute;
+    border-radius: 13% 87% 18% 82% / 100% 0% 100% 0%;
+    background: rgb(172, 172, 172);
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 1000px;
+    background: url(src/third.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.footer_container {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.footer_block {
+    position: absolute;
+    left: 16.5em;
+    top: 25em;
+    color: white;
+    
+}
+
+.footer_block-title {
+    font-family: "Inknut Antiqua", serif;
+    font-size: 5em;
+    margin-bottom: 20px;
+    cursor: default;
+    color: white;
+}
+
+.footer_block-description {
+    font-family: "Inconsolata", monospace;
+    font-size: 1.3em;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    cursor: default;
+    color: white;
+
+}
+
+.footer_form {
+    position: absolute;
+    right: 4em;
+    top: 4em;
+    color: white;
+    font-family: "Inconsolata", monospace;
+    font-size: 4em;
+
+}
+
+.footer_form legend {
+    font-family: "Inknut Antiqua", serif;
+    margin-bottom: 150px;
+    cursor: pointer;
+}
+
+input {
+    width: 550px;
+    margin: 10px;
+    height: 80px;
+    display: block;
+    padding-left: 20px;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 0.5em;
+}
+input[type=submit] {
+margin-left: 20px;
+cursor: pointer;
+  }
+.madeby{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 48%;
+    opacity: 0.5;
+}
+
+
+html.sr .main_map {
+    visibility: hidden;
+  }
